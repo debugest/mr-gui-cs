@@ -8,45 +8,35 @@ namespace mr.model
 {
     class Timing
     {
-        public Timing()
+        Timing()
             : this(0)
         {
         }
 
-        public Timing(int sec)
+        Timing(int sec)
         {
-            second = sec;
+            seconds = sec;
         }
 
-        public void reset(int sec)
+        void reset()
         {
-            second = sec;
+            seconds = 0;
         }
 
-        public void addSecond()
-        {
-            ++second;
-        }
-
-
-        public void minusSecond()
-        {
-            --second;
-        }
         public override string ToString()
         {
-            if (0 == second)
+            if (0 == seconds)
             {
                 return "--:--";
             }
             else
             {
-                int min = second / 60;
-                int sec = second % 60;
+                int min = seconds / 60;
+                int sec = seconds % 60;
                 return min + ":" + sec;
             }
         }
 
-        private int second;
+        private int seconds;
     }
 }
