@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.contrastPanel = new System.Windows.Forms.Panel();
             this.timeBtn = new System.Windows.Forms.Button();
             this.contrastTitleLbl = new System.Windows.Forms.Label();
@@ -88,8 +87,6 @@
             this.timeBtn.Text = "Suspend\nTiming";
             this.timeBtn.UseVisualStyleBackColor = true;
             this.timeBtn.Click += new System.EventHandler(this.timeBtn_Click);
-            this.timeBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.timeBtn_MouseDown);
-            this.timeBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.timeBtn_MouseUp);
             // 
             // contrastTitleLbl
             // 
@@ -222,7 +219,7 @@
             // salinePanel
             // 
             this.salinePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(61)))), ((int)(((byte)(140)))));
-            this.salinePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("salinePanel.BackgroundImage")));
+            this.salinePanel.BackgroundImage = global::mr.Properties.Resources.syringe_background;
             this.salinePanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.salinePanel.Location = new System.Drawing.Point(435, 9);
             this.salinePanel.Margin = new System.Windows.Forms.Padding(0);
