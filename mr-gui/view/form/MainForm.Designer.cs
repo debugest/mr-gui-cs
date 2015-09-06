@@ -1,4 +1,4 @@
-﻿namespace mr.ui.form
+﻿namespace mr.view.form
 {
     partial class MainForm
     {

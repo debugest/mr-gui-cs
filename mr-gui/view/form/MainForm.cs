@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace mr.ui.form
+namespace mr.view.form
 {
     public partial class MainForm : Form
     {

@@ -38,16 +38,26 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="cmd\" />
-    <Folder Include="Properties\" />
-    <Folder Include="ui\widget\" />
+    <Folder Include="controller\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="model\Timing.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="run\Program.cs" />
-    <Compile Include="ui\form\MainForm.cs">
+    <Compile Include="view\form\KeyboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui\form\MainForm.Designer.cs">
+    <Compile Include="view\form\KeyboardForm.Designer.cs">
+      <DependentUpon>KeyboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\form\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\form\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -57,6 +67,30 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\form\KeyboardForm.resx">
+      <DependentUpon>KeyboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_up.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter_key_down.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter_key_up.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
