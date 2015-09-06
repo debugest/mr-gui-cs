@@ -18,7 +18,7 @@ namespace mr.run
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new KeyboardForm());
+            Application.Run(new MainForm());
         }
     }
 }
