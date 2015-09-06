@@ -1,4 +1,4 @@
-﻿using mr.view.form;
+﻿using mr.view;
 using System;
 using System.Collections.Generic;
 using System.Linq;

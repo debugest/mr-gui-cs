@@ -37,10 +37,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="controller\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="controller\TimingController.cs" />
     <Compile Include="model\Timing.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -48,16 +47,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="run\Program.cs" />
-    <Compile Include="view\form\KeyboardForm.cs">
+    <Compile Include="view\KeyboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\form\KeyboardForm.Designer.cs">
+    <Compile Include="view\KeyboardForm.Designer.cs">
       <DependentUpon>KeyboardForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\form\MainForm.cs">
+    <Compile Include="view\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\form\MainForm.Designer.cs">
+    <Compile Include="view\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -73,10 +72,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\form\KeyboardForm.resx">
+    <EmbeddedResource Include="view\KeyboardForm.resx">
       <DependentUpon>KeyboardForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\form\MainForm.resx">
+    <EmbeddedResource Include="view\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -97,6 +96,915 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\syringe_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn46.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn54.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn56.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn58.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn60.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn68.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn70.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn74.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn76.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn78.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn80.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn82.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn84.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn86.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn88.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn90.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn92.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn94.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn98.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn102.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn104.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn106.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn108.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn110.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn114.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn118.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn120.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn122.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn124.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn126.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn128.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn130.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn132.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn134.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn136.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn138.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn140.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn142.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn144.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn146.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn148.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn150.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn152.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn154.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn156.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn158.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn162.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn164.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn166.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn168.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn170.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn172.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn174.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn176.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn178.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn180.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn182.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn184.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn186.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn188.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn190.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn192.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn194.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn196.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn198.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrdn200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi46.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi54.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi56.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi58.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi60.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi68.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi70.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi74.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi76.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi78.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi80.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi82.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi84.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi86.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi88.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi90.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi92.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi94.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi98.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi102.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi104.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi106.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi108.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi110.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi114.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi118.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi120.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi122.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi124.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi126.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi128.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi130.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi132.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi134.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi136.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi138.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi140.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi142.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi144.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi146.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi148.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi150.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi152.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi154.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi156.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi158.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi162.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi164.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi166.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi168.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi170.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi172.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi174.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi176.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi178.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi180.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi182.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi184.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi186.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi188.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi190.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi192.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi194.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi196.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi198.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrmi200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup38.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup46.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup48.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup50.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup54.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup56.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup58.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup60.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup68.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup70.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup72.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup74.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup76.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup78.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup80.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup82.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup84.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup86.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup88.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup90.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup92.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup94.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup98.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup100.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup102.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup104.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup106.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup108.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup110.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup112.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup114.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup116.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup118.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup120.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup122.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup124.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup126.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup128.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup130.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup132.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup134.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup136.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup138.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup140.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup142.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup144.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup146.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup148.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup150.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup152.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup154.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup156.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup158.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup162.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup164.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup166.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup168.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup170.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup172.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup174.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup176.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup178.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup180.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup182.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup184.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup186.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup188.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup190.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup192.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup194.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup196.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup198.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe\syrup200.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
