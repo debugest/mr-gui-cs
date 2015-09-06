@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace mr.view.form
+namespace mr.view
 {
     public partial class KeyboardForm : Form
     {

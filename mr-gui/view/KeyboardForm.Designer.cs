@@ -1,4 +1,4 @@
-﻿namespace mr.view.form
+﻿namespace mr.view
 {
     partial class KeyboardForm
     {
