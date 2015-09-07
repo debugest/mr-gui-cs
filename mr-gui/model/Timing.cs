@@ -18,33 +18,26 @@ namespace mr.model
             second = sec;
         }
 
-        public void reset(int sec)
+        public void Reset()
         {
-            second = sec;
+            second = 0;
         }
 
-        public void addSecond()
+        public void AddSecond()
         {
             ++second;
         }
 
 
-        public void minusSecond()
+        public void MinusSecond()
         {
             --second;
         }
         public override string ToString()
         {
-            if (0 == second)
-            {
-                return "--:--";
-            }
-            else
-            {
-                int min = second / 60;
-                int sec = second % 60;
-                return min + ":" + sec;
-            }
+            int min = second / 60;
+            int sec = second % 60;
+            return min + ":" + sec;
         }
 
         private int second;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace mr.controller
 {
-    class TimingController
+    public class TimingController
     {
         public TimingController(mr.view.MainForm form)
         {
@@ -26,17 +26,22 @@ namespace mr.controller
         {
             timer.Stop();
         }
+
+        public void Restart()
+        {
+            timer.Start();
+        }
         
         public void OnTimeOut(Object sender, System.Timers.ElapsedEventArgs e)
         {
-            timingModel.minusSecond();
-            mainForm.UpdateTimingText();
+            timingModel.AddSecond();
+            mainForm.UpdateTimingText(GetTimingString());
         }
 
-        public void SetInitialSecond(int sec)
+        public void Reset()
         {
-            timingModel.reset(sec);
-            mainForm.UpdateTimingText();
+            timingModel.Reset();
+            mainForm.UpdateTimingText(GetTimingString());
         }
 
         public string GetTimingString()
