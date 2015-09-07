@@ -139,5 +139,12 @@ namespace mr.view
         {
             this.Close();
         }
+
+        private void phaseLbl_Click(object sender, EventArgs e)
+        {
+            PhaseSelectForm form = new PhaseSelectForm();
+            form.Owner = this;
+            form.ShowDialog();
+        }
     }
 }
