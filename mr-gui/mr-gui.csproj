@@ -85,6 +85,7 @@
   <ItemGroup>
     <Compile Include="controller\SyringeInjectController.cs" />
     <Compile Include="controller\TimingController.cs" />
+    <Compile Include="model\InjectProgram.cs" />
     <Compile Include="model\SyringeParameter.cs" />
     <Compile Include="model\SyringeStatus.cs" />
     <Compile Include="model\Timing.cs" />
@@ -106,11 +107,23 @@
     <Compile Include="view\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\NumberInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\NumberInputForm.Designer.cs">
+      <DependentUpon>NumberInputForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\PhaseSelectForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="view\PhaseSelectForm.Designer.cs">
       <DependentUpon>PhaseSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\WarningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\WarningForm.Designer.cs">
+      <DependentUpon>WarningForm.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -131,8 +144,14 @@
     <EmbeddedResource Include="view\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\NumberInputForm.resx">
+      <DependentUpon>NumberInputForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\PhaseSelectForm.resx">
       <DependentUpon>PhaseSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\WarningForm.resx">
+      <DependentUpon>WarningForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -1068,6 +1087,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\phase_select_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\number_input_background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

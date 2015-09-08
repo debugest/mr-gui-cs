@@ -146,5 +146,168 @@ namespace mr.view
             form.Owner = this;
             form.ShowDialog();
         }
+
+        private void rate1Lbl_Click(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
+            form.Owner = this;
+            form.ShowDialog();
+            label.Text = this.Tag.ToString();
+            AutoCaculate(label, volume1Lbl, time1Lbl, "rate");
+        }
+
+        private void volume1Lbl_Click(object sender, EventArgs e)
+        {
+            if ("----" != rate1Lbl.Text)
+            {
+                Label label = sender as Label;
+                NumberInputForm form = new NumberInputForm("Volume Range 1-100ml", label.Text, 1000, 10, 10);
+                form.Owner = this;
+                form.ShowDialog();
+                label.Text = this.Tag.ToString();
+                AutoCaculate(label, volume1Lbl, time1Lbl, "volume");
+            }
+        }
+
+        private void time1Lbl_Click(object sender, EventArgs e)
+        {
+            if ("----" != rate1Lbl.Text && "----" != volume1Lbl.Text)
+            {
+                int rate = LabelTextToInt(rate1Lbl.Text, 10);
+                int volume = LabelTextToInt(volume1Lbl.Text, 10);
+                int time = volume / rate;
+                Label label = sender as Label;
+                NumberInputForm form = new NumberInputForm("Phase Time Range 1-" + time + "sec", label.Text, time, 1, 1);
+                form.Owner = this;
+                form.ShowDialog();
+                label.Text = this.Tag.ToString();
+                AutoCaculate(label, volume1Lbl, time1Lbl, "volume");
+            }
+        }
+
+        private void rate2Lbl_Click(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
+            form.Owner = this;
+            form.ShowDialog();
+            label.Text = this.Tag.ToString();
+            AutoCaculate(label, volume2Lbl, time2Lbl, "rate");
+        }
+
+        private void rate3Lbl_Click(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
+            form.Owner = this;
+            form.ShowDialog();
+            label.Text = this.Tag.ToString();
+            AutoCaculate(label, volume3Lbl, time3Lbl, "rate");
+        }
+
+        private void rate4Lbl_Click(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
+            form.Owner = this;
+            form.ShowDialog();
+            label.Text = this.Tag.ToString();
+            AutoCaculate(label, volume4Lbl, time4Lbl, "rate");
+        }
+
+        private void volume2Lbl_Click(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            NumberInputForm form = new NumberInputForm("Volume Range 1-100ml", label.Text, 10000, 100, 100);
+            form.Owner = this;
+            form.ShowDialog();
+            label.Text = this.Tag.ToString();
+            AutoCaculate(label, volume2Lbl, time2Lbl, "volume");
+        }
+
+        private void volume3Lbl_Click(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            NumberInputForm form = new NumberInputForm("Volume Range 1-100ml", label.Text, 10000, 100, 100);
+            form.Owner = this;
+            form.ShowDialog();
+            label.Text = this.Tag.ToString();
+            AutoCaculate(label, volume3Lbl, time3Lbl, "volume");
+        }
+
+        private void volume4Lbl_Click(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            NumberInputForm form = new NumberInputForm("Volume Range 1-100ml", label.Text, 10000, 100, 100);
+            form.Owner = this;
+            form.ShowDialog();
+            label.Text = this.Tag.ToString();
+            AutoCaculate(label, volume4Lbl, time4Lbl, "volume");
+        }
+
+        private void AutoCaculate(Label rateLbl, Label volumeLbl, Label timeLbl, string title)
+        {
+            int rate = LabelTextToInt(rateLbl.Text, 10);
+            int time = LabelTextToInt(timeLbl.Text, 10);
+            int volume = LabelTextToInt(volumeLbl.Text, 100);
+            if ("rate" == title)
+            {
+                if (0 == time)
+                {
+                    if (0 != volume)
+                    {
+                        timeLbl.Text = IntToLabelText(volume / rate, 10);
+                    }
+                }
+                else
+                {
+                    if (0 != volume)
+                    {
+                        volumeLbl.Text = "----";
+                        timeLbl.Text = "----";
+                    }
+                    else
+                    {
+                        volumeLbl.Text = IntToLabelText(rate * time, 100);
+                    }
+                }
+            }
+            else if ("volume" == title)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
+
+        public int LabelTextToInt(string text, int factor)
+        {
+            if ("----" == text || "" == text)
+            {
+                return 0;
+            }
+            else
+            {
+                float val = float.Parse(text);
+                return (int)(val * factor);
+            }
+        }
+
+        public string IntToLabelText(int value, int factor)
+        {
+            int intPart = value / factor;
+            int decPart = value % factor;
+            if (0 == decPart)
+            {
+                return intPart.ToString();
+            }
+            else
+            {
+                return intPart.ToString() + "." + decPart.ToString();
+            }
+        }
     }
 }
