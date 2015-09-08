@@ -45,6 +45,13 @@ namespace mr.model
             this.time = para.time;
         }
 
+        public void Set(int r, int v, int t)
+        {
+            this.flowRate = r;
+            this.volume = v;
+            this.time = t;
+        }
+
         public SyringePhaseType PhaseType
         {
             get

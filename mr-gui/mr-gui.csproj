@@ -83,6 +83,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\InjectProgramController.cs" />
     <Compile Include="controller\SyringeInjectController.cs" />
     <Compile Include="controller\TimingController.cs" />
     <Compile Include="model\InjectProgram.cs" />

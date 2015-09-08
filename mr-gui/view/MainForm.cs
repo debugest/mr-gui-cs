@@ -18,6 +18,7 @@ namespace mr.view
             contrastTimingCtrl = new mr.controller.TimingController(this);
             isContrastTiming = true;
             isKvoOff = true;
+            injectProgramCtrl = new mr.controller.InjectProgramController(this);
         }
 
         public delegate void TimingInvoke(string text);
@@ -134,6 +135,8 @@ namespace mr.view
         private mr.controller.SyringeInjectController salineInjectCtrl;
         private bool isContrastTiming;
         private bool isKvoOff;
+        private int currentStepIndex;
+        private mr.controller.InjectProgramController injectProgramCtrl;
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -156,7 +159,7 @@ namespace mr.view
             if (this.Tag != null)
             {
                 label.Text = this.Tag.ToString();
-                AutoCaculate(label, volume1Lbl, time1Lbl, "rate");
+                AutoCaculate(currentStepIndex, label, volume1Lbl, time1Lbl, "rate");
             }
         }
 
@@ -171,7 +174,7 @@ namespace mr.view
                 if (this.Tag != null)
                 {
                     label.Text = this.Tag.ToString();
-                    AutoCaculate(rate1Lbl, label, time1Lbl, "volume");
+                    AutoCaculate(currentStepIndex, rate1Lbl, label, time1Lbl, "volume");
                 }
             }
         }
@@ -194,7 +197,7 @@ namespace mr.view
                 if (this.Tag != null)
                 {
                     label.Text = this.Tag.ToString();
-                    AutoCaculate(rate1Lbl, volume1Lbl, label, "time");
+                    AutoCaculate(currentStepIndex, rate1Lbl, volume1Lbl, label, "time");
                 }
             }
         }
@@ -208,7 +211,7 @@ namespace mr.view
             if (this.Tag != null)
             {
                 label.Text = this.Tag.ToString();
-                AutoCaculate(label, volume2Lbl, time2Lbl, "rate");
+                AutoCaculate(currentStepIndex + 1, label, volume2Lbl, time2Lbl, "rate");
             }
         }
 
@@ -223,7 +226,7 @@ namespace mr.view
                 if (this.Tag != null)
                 {
                     label.Text = this.Tag.ToString();
-                    AutoCaculate(rate2Lbl, label, time2Lbl, "volume");
+                    AutoCaculate(currentStepIndex + 1, rate2Lbl, label, time2Lbl, "volume");
                 }
             }
         }
@@ -246,7 +249,7 @@ namespace mr.view
                 if (this.Tag != null)
                 {
                     label.Text = this.Tag.ToString();
-                    AutoCaculate(rate2Lbl, volume2Lbl, label, "time");
+                    AutoCaculate(currentStepIndex + 1, rate2Lbl, volume2Lbl, label, "time");
                 }
             }
         }
@@ -260,7 +263,7 @@ namespace mr.view
             if (this.Tag != null)
             {
                 label.Text = this.Tag.ToString();
-                AutoCaculate(label, volume3Lbl, time3Lbl, "rate");
+                AutoCaculate(currentStepIndex + 2, label, volume3Lbl, time3Lbl, "rate");
             }
         }
 
@@ -275,7 +278,7 @@ namespace mr.view
                 if (this.Tag != null)
                 {
                     label.Text = this.Tag.ToString();
-                    AutoCaculate(rate3Lbl, label, time3Lbl, "volume");
+                    AutoCaculate(currentStepIndex + 2, rate3Lbl, label, time3Lbl, "volume");
                 }
             }
         }
@@ -298,7 +301,7 @@ namespace mr.view
                 if (this.Tag != null)
                 {
                     label.Text = this.Tag.ToString();
-                    AutoCaculate(rate3Lbl, volume3Lbl, label, "time");
+                    AutoCaculate(currentStepIndex + 2, rate3Lbl, volume3Lbl, label, "time");
                 }
             }
         }
@@ -312,7 +315,7 @@ namespace mr.view
             if (this.Tag != null)
             {
                 label.Text = this.Tag.ToString();
-                AutoCaculate(label, volume4Lbl, time4Lbl, "rate");
+                AutoCaculate(currentStepIndex + 3, label, volume4Lbl, time4Lbl, "rate");
             }
         }
 
@@ -327,7 +330,7 @@ namespace mr.view
                 if (this.Tag != null)
                 {
                     label.Text = this.Tag.ToString();
-                    AutoCaculate(rate4Lbl, label, time4Lbl, "volume");
+                    AutoCaculate(currentStepIndex + 3, rate4Lbl, label, time4Lbl, "volume");
                 }
             }
         }
@@ -350,12 +353,12 @@ namespace mr.view
                 if (this.Tag != null)
                 {
                     label.Text = this.Tag.ToString();
-                    AutoCaculate(rate4Lbl, volume4Lbl, label, "time");
+                    AutoCaculate(currentStepIndex + 3, rate4Lbl, volume4Lbl, label, "time");
                 }
             }
         }
 
-        private void AutoCaculate(Label rateLbl, Label volumeLbl, Label timeLbl, string title)
+        private void AutoCaculate(int stepIndex, Label rateLbl, Label volumeLbl, Label timeLbl, string title)
         {
             int rate = LabelTextToInt(rateLbl.Text, 10);
             int time = LabelTextToInt(timeLbl.Text, 1);
@@ -381,6 +384,8 @@ namespace mr.view
                     volumeLbl.Text = IntToLabelText(rate * time, 10);
                 }
             }
+            injectProgramCtrl.OnInjectStepParameterChange(stepIndex, LabelTextToInt(rateLbl.Text, 10), 
+                LabelTextToInt(volumeLbl.Text, 10), LabelTextToInt(timeLbl.Text, 1));
         }
 
         public int LabelTextToInt(string text, int factor)

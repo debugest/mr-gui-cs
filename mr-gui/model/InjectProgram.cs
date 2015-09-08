@@ -11,6 +11,10 @@ namespace mr.model
         public InjectProgram()
         {
             injectSteps = new List<SyringeParameter>(8);
+            for (int i = 0; i != 8; ++i)
+            {
+                injectSteps.Add(new SyringeParameter());
+            }
         }
 
         public SyringeParameter GetStepParameter(int index)
