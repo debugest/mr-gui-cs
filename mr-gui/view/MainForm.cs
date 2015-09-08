@@ -153,8 +153,11 @@ namespace mr.view
             NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
             form.Owner = this;
             form.ShowDialog();
-            label.Text = this.Tag.ToString();
-            AutoCaculate(label, volume1Lbl, time1Lbl, "rate");
+            if (this.Tag != null)
+            {
+                label.Text = this.Tag.ToString();
+                AutoCaculate(label, volume1Lbl, time1Lbl, "rate");
+            }
         }
 
         private void volume1Lbl_Click(object sender, EventArgs e)
@@ -165,24 +168,34 @@ namespace mr.view
                 NumberInputForm form = new NumberInputForm("Volume Range 1-100ml", label.Text, 1000, 10, 10);
                 form.Owner = this;
                 form.ShowDialog();
-                label.Text = this.Tag.ToString();
-                AutoCaculate(label, volume1Lbl, time1Lbl, "volume");
+                if (this.Tag != null)
+                {
+                    label.Text = this.Tag.ToString();
+                    AutoCaculate(rate1Lbl, label, time1Lbl, "volume");
+                }
             }
         }
 
         private void time1Lbl_Click(object sender, EventArgs e)
         {
-            if ("----" != rate1Lbl.Text && "----" != volume1Lbl.Text)
+            if ("----" != rate1Lbl.Text)
             {
                 int rate = LabelTextToInt(rate1Lbl.Text, 10);
                 int volume = LabelTextToInt(volume1Lbl.Text, 10);
+                if (0 == volume)
+                {
+                    volume = 100 * 10;
+                }
                 int time = volume / rate;
                 Label label = sender as Label;
                 NumberInputForm form = new NumberInputForm("Phase Time Range 1-" + time + "sec", label.Text, time, 1, 1);
                 form.Owner = this;
                 form.ShowDialog();
-                label.Text = this.Tag.ToString();
-                AutoCaculate(label, volume1Lbl, time1Lbl, "volume");
+                if (this.Tag != null)
+                {
+                    label.Text = this.Tag.ToString();
+                    AutoCaculate(rate1Lbl, volume1Lbl, label, "time");
+                }
             }
         }
 
@@ -192,8 +205,50 @@ namespace mr.view
             NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
             form.Owner = this;
             form.ShowDialog();
-            label.Text = this.Tag.ToString();
-            AutoCaculate(label, volume2Lbl, time2Lbl, "rate");
+            if (this.Tag != null)
+            {
+                label.Text = this.Tag.ToString();
+                AutoCaculate(label, volume2Lbl, time2Lbl, "rate");
+            }
+        }
+
+        private void volume2Lbl_Click(object sender, EventArgs e)
+        {
+            if ("----" != rate2Lbl.Text)
+            {
+                Label label = sender as Label;
+                NumberInputForm form = new NumberInputForm("Volume Range 1-100ml", label.Text, 1000, 10, 10);
+                form.Owner = this;
+                form.ShowDialog();
+                if (this.Tag != null)
+                {
+                    label.Text = this.Tag.ToString();
+                    AutoCaculate(rate2Lbl, label, time2Lbl, "volume");
+                }
+            }
+        }
+
+        private void time2Lbl_Click(object sender, EventArgs e)
+        {
+            if ("----" != rate2Lbl.Text)
+            {
+                int rate = LabelTextToInt(rate2Lbl.Text, 10);
+                int volume = LabelTextToInt(volume2Lbl.Text, 10);
+                if (0 == volume)
+                {
+                    volume = 100 * 10;
+                }
+                int time = volume / rate;
+                Label label = sender as Label;
+                NumberInputForm form = new NumberInputForm("Phase Time Range 1-" + time + "sec", label.Text, time, 1, 1);
+                form.Owner = this;
+                form.ShowDialog();
+                if (this.Tag != null)
+                {
+                    label.Text = this.Tag.ToString();
+                    AutoCaculate(rate2Lbl, volume2Lbl, label, "time");
+                }
+            }
         }
 
         private void rate3Lbl_Click(object sender, EventArgs e)
@@ -202,8 +257,50 @@ namespace mr.view
             NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
             form.Owner = this;
             form.ShowDialog();
-            label.Text = this.Tag.ToString();
-            AutoCaculate(label, volume3Lbl, time3Lbl, "rate");
+            if (this.Tag != null)
+            {
+                label.Text = this.Tag.ToString();
+                AutoCaculate(label, volume3Lbl, time3Lbl, "rate");
+            }
+        }
+
+        private void volume3Lbl_Click(object sender, EventArgs e)
+        {
+            if ("----" != rate3Lbl.Text)
+            {
+                Label label = sender as Label;
+                NumberInputForm form = new NumberInputForm("Volume Range 1-100ml", label.Text, 1000, 10, 10);
+                form.Owner = this;
+                form.ShowDialog();
+                if (this.Tag != null)
+                {
+                    label.Text = this.Tag.ToString();
+                    AutoCaculate(rate3Lbl, label, time3Lbl, "volume");
+                }
+            }
+        }
+
+        private void time3Lbl_Click(object sender, EventArgs e)
+        {
+            if ("----" != rate3Lbl.Text)
+            {
+                int rate = LabelTextToInt(rate3Lbl.Text, 10);
+                int volume = LabelTextToInt(volume3Lbl.Text, 10);
+                if (0 == volume)
+                {
+                    volume = 100 * 10;
+                }
+                int time = volume / rate;
+                Label label = sender as Label;
+                NumberInputForm form = new NumberInputForm("Phase Time Range 1-" + time + "sec", label.Text, time, 1, 1);
+                form.Owner = this;
+                form.ShowDialog();
+                if (this.Tag != null)
+                {
+                    label.Text = this.Tag.ToString();
+                    AutoCaculate(rate3Lbl, volume3Lbl, label, "time");
+                }
+            }
         }
 
         private void rate4Lbl_Click(object sender, EventArgs e)
@@ -212,74 +309,77 @@ namespace mr.view
             NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
             form.Owner = this;
             form.ShowDialog();
-            label.Text = this.Tag.ToString();
-            AutoCaculate(label, volume4Lbl, time4Lbl, "rate");
-        }
-
-        private void volume2Lbl_Click(object sender, EventArgs e)
-        {
-            Label label = sender as Label;
-            NumberInputForm form = new NumberInputForm("Volume Range 1-100ml", label.Text, 10000, 100, 100);
-            form.Owner = this;
-            form.ShowDialog();
-            label.Text = this.Tag.ToString();
-            AutoCaculate(label, volume2Lbl, time2Lbl, "volume");
-        }
-
-        private void volume3Lbl_Click(object sender, EventArgs e)
-        {
-            Label label = sender as Label;
-            NumberInputForm form = new NumberInputForm("Volume Range 1-100ml", label.Text, 10000, 100, 100);
-            form.Owner = this;
-            form.ShowDialog();
-            label.Text = this.Tag.ToString();
-            AutoCaculate(label, volume3Lbl, time3Lbl, "volume");
+            if (this.Tag != null)
+            {
+                label.Text = this.Tag.ToString();
+                AutoCaculate(label, volume4Lbl, time4Lbl, "rate");
+            }
         }
 
         private void volume4Lbl_Click(object sender, EventArgs e)
         {
-            Label label = sender as Label;
-            NumberInputForm form = new NumberInputForm("Volume Range 1-100ml", label.Text, 10000, 100, 100);
-            form.Owner = this;
-            form.ShowDialog();
-            label.Text = this.Tag.ToString();
-            AutoCaculate(label, volume4Lbl, time4Lbl, "volume");
+            if ("----" != rate4Lbl.Text)
+            {
+                Label label = sender as Label;
+                NumberInputForm form = new NumberInputForm("Volume Range 1-100ml", label.Text, 1000, 10, 10);
+                form.Owner = this;
+                form.ShowDialog();
+                if (this.Tag != null)
+                {
+                    label.Text = this.Tag.ToString();
+                    AutoCaculate(rate4Lbl, label, time4Lbl, "volume");
+                }
+            }
+        }
+
+        private void time4Lbl_Click(object sender, EventArgs e)
+        {
+            if ("----" != rate4Lbl.Text)
+            {
+                int rate = LabelTextToInt(rate4Lbl.Text, 10);
+                int volume = LabelTextToInt(volume4Lbl.Text, 10);
+                if (0 == volume)
+                {
+                    volume = 100 * 10;
+                }
+                int time = volume / rate;
+                Label label = sender as Label;
+                NumberInputForm form = new NumberInputForm("Phase Time Range 1-" + time + "sec", label.Text, time, 1, 1);
+                form.Owner = this;
+                form.ShowDialog();
+                if (this.Tag != null)
+                {
+                    label.Text = this.Tag.ToString();
+                    AutoCaculate(rate4Lbl, volume4Lbl, label, "time");
+                }
+            }
         }
 
         private void AutoCaculate(Label rateLbl, Label volumeLbl, Label timeLbl, string title)
         {
             int rate = LabelTextToInt(rateLbl.Text, 10);
-            int time = LabelTextToInt(timeLbl.Text, 10);
-            int volume = LabelTextToInt(volumeLbl.Text, 100);
+            int time = LabelTextToInt(timeLbl.Text, 1);
+            int volume = LabelTextToInt(volumeLbl.Text, 10);
             if ("rate" == title)
             {
-                if (0 == time)
+                if (0 != time && 0 != volume)
                 {
-                    if (0 != volume)
-                    {
-                        timeLbl.Text = IntToLabelText(volume / rate, 10);
-                    }
-                }
-                else
-                {
-                    if (0 != volume)
-                    {
-                        volumeLbl.Text = "----";
-                        timeLbl.Text = "----";
-                    }
-                    else
-                    {
-                        volumeLbl.Text = IntToLabelText(rate * time, 100);
-                    }
+                    timeLbl.Text = IntToLabelText(volume / rate, 1);
                 }
             }
             else if ("volume" == title)
             {
-
+                if (0 != rate && 0 != time)
+                {
+                    timeLbl.Text = IntToLabelText(volume / rate, 1);
+                }
             }
             else
             {
-
+                if (0 != rate && 0 != volume)
+                {
+                    volumeLbl.Text = IntToLabelText(rate * time, 10);
+                }
             }
         }
 

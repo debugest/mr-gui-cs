@@ -216,6 +216,7 @@
             this.time4Lbl.TabIndex = 15;
             this.time4Lbl.Text = "----";
             this.time4Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.time4Lbl.Click += new System.EventHandler(this.time4Lbl_Click);
             // 
             // volume4Lbl
             // 
@@ -227,6 +228,7 @@
             this.volume4Lbl.TabIndex = 14;
             this.volume4Lbl.Text = "----";
             this.volume4Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.volume4Lbl.Click += new System.EventHandler(this.volume4Lbl_Click);
             // 
             // rate4Lbl
             // 
@@ -238,6 +240,7 @@
             this.rate4Lbl.TabIndex = 13;
             this.rate4Lbl.Text = "----";
             this.rate4Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rate4Lbl.Click += new System.EventHandler(this.rate4Lbl_Click);
             // 
             // phase4Lbl
             // 
@@ -261,6 +264,7 @@
             this.time3Lbl.TabIndex = 11;
             this.time3Lbl.Text = "----";
             this.time3Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.time3Lbl.Click += new System.EventHandler(this.time3Lbl_Click);
             // 
             // volume3Lbl
             // 
@@ -272,6 +276,7 @@
             this.volume3Lbl.TabIndex = 10;
             this.volume3Lbl.Text = "----";
             this.volume3Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.volume3Lbl.Click += new System.EventHandler(this.volume3Lbl_Click);
             // 
             // rate3Lbl
             // 
@@ -283,6 +288,7 @@
             this.rate3Lbl.TabIndex = 9;
             this.rate3Lbl.Text = "----";
             this.rate3Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rate3Lbl.Click += new System.EventHandler(this.rate3Lbl_Click);
             // 
             // phase3Lbl
             // 
@@ -306,6 +312,7 @@
             this.time2Lbl.TabIndex = 7;
             this.time2Lbl.Text = "----";
             this.time2Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.time2Lbl.Click += new System.EventHandler(this.time2Lbl_Click);
             // 
             // volume2Lbl
             // 
@@ -317,6 +324,7 @@
             this.volume2Lbl.TabIndex = 6;
             this.volume2Lbl.Text = "----";
             this.volume2Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.volume2Lbl.Click += new System.EventHandler(this.volume2Lbl_Click);
             // 
             // rate2Lbl
             // 
@@ -328,6 +336,7 @@
             this.rate2Lbl.TabIndex = 5;
             this.rate2Lbl.Text = "----";
             this.rate2Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rate2Lbl.Click += new System.EventHandler(this.rate2Lbl_Click);
             // 
             // phase2Lbl
             // 
