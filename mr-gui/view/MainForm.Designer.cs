@@ -32,6 +32,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.parameterSetPanel = new System.Windows.Forms.Panel();
+            this.scrollBarBox = new System.Windows.Forms.PictureBox();
+            this.injectStepDownBtn = new System.Windows.Forms.Button();
+            this.injectStepUpBtn = new System.Windows.Forms.Button();
             this.timeTitleLbl = new System.Windows.Forms.Label();
             this.volumeTitleLbl = new System.Windows.Forms.Label();
             this.rateTitleLbl = new System.Windows.Forms.Label();
@@ -80,6 +83,7 @@
             this.contrastRemainNumberLbl = new System.Windows.Forms.Label();
             this.constrastRemainTitleLbl = new System.Windows.Forms.Label();
             this.parameterSetPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scrollBarBox)).BeginInit();
             this.panel1.SuspendLayout();
             this.salinePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.salineImageBox)).BeginInit();
@@ -120,6 +124,9 @@
             // 
             this.parameterSetPanel.BackgroundImage = global::mr.Properties.Resources.parameter_set_background;
             this.parameterSetPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.parameterSetPanel.Controls.Add(this.scrollBarBox);
+            this.parameterSetPanel.Controls.Add(this.injectStepDownBtn);
+            this.parameterSetPanel.Controls.Add(this.injectStepUpBtn);
             this.parameterSetPanel.Controls.Add(this.timeTitleLbl);
             this.parameterSetPanel.Controls.Add(this.volumeTitleLbl);
             this.parameterSetPanel.Controls.Add(this.rateTitleLbl);
@@ -129,6 +136,48 @@
             this.parameterSetPanel.Name = "parameterSetPanel";
             this.parameterSetPanel.Size = new System.Drawing.Size(580, 332);
             this.parameterSetPanel.TabIndex = 16;
+            // 
+            // scrollBarBox
+            // 
+            this.scrollBarBox.BackgroundImage = global::mr.Properties.Resources.scroll_connect;
+            this.scrollBarBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.scrollBarBox.Location = new System.Drawing.Point(375, 127);
+            this.scrollBarBox.Margin = new System.Windows.Forms.Padding(0);
+            this.scrollBarBox.Name = "scrollBarBox";
+            this.scrollBarBox.Size = new System.Drawing.Size(62, 126);
+            this.scrollBarBox.TabIndex = 8;
+            this.scrollBarBox.TabStop = false;
+            // 
+            // injectStepDownBtn
+            // 
+            this.injectStepDownBtn.BackgroundImage = global::mr.Properties.Resources.scroll_down_button;
+            this.injectStepDownBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.injectStepDownBtn.FlatAppearance.BorderSize = 0;
+            this.injectStepDownBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.injectStepDownBtn.Location = new System.Drawing.Point(375, 253);
+            this.injectStepDownBtn.Name = "injectStepDownBtn";
+            this.injectStepDownBtn.Size = new System.Drawing.Size(62, 62);
+            this.injectStepDownBtn.TabIndex = 6;
+            this.injectStepDownBtn.UseVisualStyleBackColor = true;
+            this.injectStepDownBtn.Click += new System.EventHandler(this.injectStepDownBtn_Click);
+            this.injectStepDownBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.injectStepDownBtn_MouseDown);
+            this.injectStepDownBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.injectStepDownBtn_MouseUp);
+            // 
+            // injectStepUpBtn
+            // 
+            this.injectStepUpBtn.BackgroundImage = global::mr.Properties.Resources.scroll_up_button;
+            this.injectStepUpBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.injectStepUpBtn.FlatAppearance.BorderSize = 0;
+            this.injectStepUpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.injectStepUpBtn.Location = new System.Drawing.Point(375, 65);
+            this.injectStepUpBtn.Margin = new System.Windows.Forms.Padding(0);
+            this.injectStepUpBtn.Name = "injectStepUpBtn";
+            this.injectStepUpBtn.Size = new System.Drawing.Size(62, 62);
+            this.injectStepUpBtn.TabIndex = 5;
+            this.injectStepUpBtn.UseVisualStyleBackColor = true;
+            this.injectStepUpBtn.Click += new System.EventHandler(this.injectStepUpBtn_Click);
+            this.injectStepUpBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.injectStepUpBtn_MouseDown);
+            this.injectStepUpBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.injectStepUpBtn_MouseUp);
             // 
             // timeTitleLbl
             // 
@@ -735,6 +784,7 @@
             this.Text = "MainForm";
             this.parameterSetPanel.ResumeLayout(false);
             this.parameterSetPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.scrollBarBox)).EndInit();
             this.panel1.ResumeLayout(false);
             this.salinePanel.ResumeLayout(false);
             this.salinePanel.PerformLayout();
@@ -799,6 +849,9 @@
         private System.Windows.Forms.Label phaseTitleLbl;
         private System.Windows.Forms.Label volumeTitleLbl;
         private System.Windows.Forms.Label timeTitleLbl;
+        private System.Windows.Forms.Button injectStepDownBtn;
+        private System.Windows.Forms.Button injectStepUpBtn;
+        private System.Windows.Forms.PictureBox scrollBarBox;
 
     }
 }

@@ -139,6 +139,9 @@
   <data name="syrdn94" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn94.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="syrup38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup38.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="syrup78" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup78.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,8 +172,8 @@
   <data name="syrmi36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi36.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrup116" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup116.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrmi164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrmi164.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup106" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup106.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,17 +184,20 @@
   <data name="syrmi130" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi130.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="syrmi186" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrmi186.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="syrdn100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn100.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="syrmi154" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrmi154.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn104" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn104.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrmi68" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrmi68.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrup26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup26.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="syrup44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup44.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn144" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn144.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,14 +211,17 @@
   <data name="syrdn170" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn170.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrdn184" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrdn184.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrup148" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup148.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrmi162" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi162.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrmi126" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi126.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="syrup92" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup92.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn46" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn46.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,9 +232,6 @@
   <data name="syrmi196" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi196.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrdn18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrdn18.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="syrup60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup60.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -235,8 +241,8 @@
   <data name="syrdn158" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn158.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrdn28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrdn28.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrdn10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrdn10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrmi170" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi170.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,14 +286,20 @@
   <data name="syrup100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup100.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrdn10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrdn10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrdn28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrdn28.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrmi50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi50.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrup10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrup116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup116.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="syrmi68" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrmi68.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="syrmi66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrmi66.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn30.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,8 +313,8 @@
   <data name="syrmi112" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi112.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrmi0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrmi0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrdn52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrdn52.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn172" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn172.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -331,8 +343,8 @@
   <data name="syrmi190" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi190.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrup28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup28.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrup10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -349,8 +361,8 @@
   <data name="syrup174" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup174.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrup32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrmi76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrmi76.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup156" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup156.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -385,17 +397,17 @@
   <data name="syrdn36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn36.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrdn96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrdn96.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrup4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrup44" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup44.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrmi180" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrmi180.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrmi76" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrmi76.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrup28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup28.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup58" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup58.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -433,8 +445,8 @@
   <data name="syrdn130" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn130.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrdn0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrdn0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrup86" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup86.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -469,9 +481,6 @@
   <data name="syrmi124" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi124.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrmi98" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrmi98.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="syrmi18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi18.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -493,8 +502,8 @@
   <data name="syrup124" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup124.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrup4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrdn184" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrdn184.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn122" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn122.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -504,6 +513,9 @@
   </data>
   <data name="syrdn80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn80.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="number_input_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\number_input_background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -544,8 +556,8 @@
   <data name="syrdn78" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn78.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrmi186" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrmi186.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrup32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup196" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup196.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -619,14 +631,14 @@
   <data name="syrmi44" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi44.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="syrup98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup98.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="syrmi86" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi86.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup18.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="syrdn110" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrdn110.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -646,26 +658,32 @@
   <data name="syrdn60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn60.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrup38" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup38.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrup198" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup198.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn182" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn182.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrmi164" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrmi164.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrmi52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrmi52.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup108" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup108.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="syrmi0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrmi0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="syrup112" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup112.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scroll_down_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scroll_down_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn54" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn54.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrup98" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup98.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrmi98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrmi98.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrmi88" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi88.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -673,8 +691,8 @@
   <data name="syrup190" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup190.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrup198" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup198.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrup164" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup164.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup146" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup146.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -712,12 +730,6 @@
   <data name="syrup82" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup82.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrdn52" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrdn52.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="syrup52" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup52.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="syrmi138" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi138.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -754,8 +766,8 @@
   <data name="syrmi152" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi152.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrup26" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup26.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrmi62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrmi62.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrmi116" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi116.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -792,12 +804,6 @@
   </data>
   <data name="syringe_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="syrup86" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup86.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="syrup164" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup164.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn50.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -855,6 +861,9 @@
   </data>
   <data name="key_up" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\key_up.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="syrup52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup52.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup34.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -943,14 +952,14 @@
   <data name="syrmi16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrup92" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup92.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrmi96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrmi96.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup94" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup94.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrmi180" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrmi180.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrdn18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrdn18.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn24.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -964,8 +973,14 @@
   <data name="syrmi140" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi140.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrmi66" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrmi66.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrdn110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrdn110.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="syrdn96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrdn96.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scroll_up_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scroll_up_button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrmi22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -973,20 +988,11 @@
   <data name="syrdn124" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn124.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrmi62" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrmi62.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="syrmi8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi8.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrdn192" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrdn192.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="syrup148" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup148.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="syrmi96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrmi96.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup70" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup70.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -994,8 +1000,8 @@
   <data name="syrup48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup48.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrup56" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrup56.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrmi154" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrmi154.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrmi176" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi176.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1042,8 +1048,8 @@
   <data name="syrup74" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup74.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="syrmi52" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\syringe\syrmi52.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrup56" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrup56.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="syrup172" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrup172.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -1051,7 +1057,16 @@
   <data name="syrmi10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\syringe\syrmi10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="number_input_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\number_input_background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="syrdn0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\syringe\syrdn0.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scroll_connect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scroll_down_connect.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scroll_down_button_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scroll_down_button_press.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="scroll_up_button_press" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\scroll_up_button_press.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

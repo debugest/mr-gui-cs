@@ -414,5 +414,35 @@ namespace mr.view
                 return intPart.ToString() + "." + decPart.ToString();
             }
         }
+
+        private void injectStepUpBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void injectStepDownBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void injectStepUpBtn_MouseDown(object sender, MouseEventArgs e)
+        {
+            (sender as Button).BackgroundImage = global::mr.Properties.Resources.scroll_up_button_press;
+        }
+
+        private void injectStepUpBtn_MouseUp(object sender, MouseEventArgs e)
+        {
+            (sender as Button).BackgroundImage = global::mr.Properties.Resources.scroll_up_button;
+        }
+
+        private void injectStepDownBtn_MouseDown(object sender, MouseEventArgs e)
+        {
+            (sender as Button).BackgroundImage = global::mr.Properties.Resources.scroll_down_button_press;
+        }
+
+        private void injectStepDownBtn_MouseUp(object sender, MouseEventArgs e)
+        {
+            (sender as Button).BackgroundImage = global::mr.Properties.Resources.scroll_down_button;
+        }
     }
 }
