@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace mr.model
 {
-    public class SyringeParameter
+    public class InjectParameter
     {
-        public enum SyringePhaseType
+        public enum InjectPhaseType
         {
             PAUSE,
             TIMED_PAUSE,
@@ -17,11 +17,11 @@ namespace mr.model
             NONE,
         }
 
-        public SyringeParameter()
-            : this(SyringePhaseType.NONE, 0, 0, 0)
+        public InjectParameter()
+            : this(InjectPhaseType.NONE, 0, 0, 0)
         { }
 
-        public SyringeParameter(SyringePhaseType p, int r, int v, int t)
+        public InjectParameter(InjectPhaseType p, int r, int v, int t)
         {
             phaseType = p;
             flowRate = r;
@@ -31,13 +31,13 @@ namespace mr.model
 
         public void Reset()
         {
-            phaseType = SyringePhaseType.NONE;
+            phaseType = InjectPhaseType.NONE;
             flowRate = 0;
             volume = 0;
             time = 0;
         }
 
-        public void Copy(SyringeParameter para)
+        public void Copy(InjectParameter para)
         {
             this.phaseType = para.phaseType;
             this.flowRate = para.flowRate;
@@ -52,7 +52,7 @@ namespace mr.model
             this.time = t;
         }
 
-        public SyringePhaseType PhaseType
+        public InjectPhaseType PhaseType
         {
             get
             {
@@ -100,7 +100,7 @@ namespace mr.model
             }
         }
         
-        private SyringePhaseType phaseType;
+        private InjectPhaseType phaseType;
         private int flowRate;
         private int volume;
         private int time;

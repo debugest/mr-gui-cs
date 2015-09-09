@@ -10,14 +10,14 @@ namespace mr.model
     {
         public InjectProgram()
         {
-            injectSteps = new List<SyringeParameter>(8);
+            injectSteps = new List<InjectParameter>(8);
             for (int i = 0; i != 8; ++i)
             {
-                injectSteps.Add(new SyringeParameter());
+                injectSteps.Add(new InjectParameter());
             }
         }
 
-        public SyringeParameter GetStepParameter(int index)
+        public InjectParameter GetInjectParameter(int index)
         {
             if (index >= 0 && index < injectSteps.Count)
             {
@@ -29,7 +29,7 @@ namespace mr.model
             }
         }
 
-        public bool SetInjectStep(int index, SyringeParameter para)
+        public bool SetInjectStep(int index, InjectParameter para)
         {
             if (index >=0 && index < injectSteps.Count)
             {
@@ -50,6 +50,6 @@ namespace mr.model
             }
         }
 
-        private List<SyringeParameter> injectSteps;
+        private List<InjectParameter> injectSteps;
     }
 }

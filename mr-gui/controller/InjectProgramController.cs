@@ -14,19 +14,31 @@ namespace mr.controller
             this.program = new mr.model.InjectProgram();
         }
 
-        public void OnInjectStepPhaseChange(int index, mr.model.SyringeParameter.SyringePhaseType p)
+        public void OnInjectStepPhaseChange(int index, mr.model.InjectParameter.InjectPhaseType p)
         {
-            program.GetStepParameter(index).PhaseType = p;
+            program.GetInjectParameter(index).PhaseType = p;
         }
 
         public void OnInjectStepParameterChange(int index, int r, int v, int t)
         {
-            program.GetStepParameter(index).Set(r, v, t);
+            program.GetInjectParameter(index).Set(r, v, t);
         }
 
         public void OnLoadProgram()
         {
 
+        }
+
+        public mr.model.InjectParameter GetInjectParameterAt(int index)
+        {
+            if (index >= 0 && index < 8)
+            {
+                return program.GetInjectParameter(index);
+            }
+            else
+            {
+                return null;
+            }
         }
 
         private mr.view.MainForm form;

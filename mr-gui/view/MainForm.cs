@@ -407,7 +407,14 @@ namespace mr.view
             int decPart = value % factor;
             if (0 == decPart)
             {
-                return intPart.ToString();
+                if (0 == intPart)
+                {
+                    return "----";
+                }
+                else
+                { 
+                    return intPart.ToString();
+                }
             }
             else
             {
@@ -417,12 +424,20 @@ namespace mr.view
 
         private void injectStepUpBtn_Click(object sender, EventArgs e)
         {
-
+            if (currentStepIndex > 0 && currentStepIndex <= 4)
+            {
+                --currentStepIndex;
+                SetDisplayInjectSteps();
+            }
         }
 
         private void injectStepDownBtn_Click(object sender, EventArgs e)
         {
-
+            if (currentStepIndex >= 0 && currentStepIndex < 4)
+            {
+                ++currentStepIndex;
+                SetDisplayInjectSteps();
+            }
         }
 
         private void injectStepUpBtn_MouseDown(object sender, MouseEventArgs e)
@@ -443,6 +458,29 @@ namespace mr.view
         private void injectStepDownBtn_MouseUp(object sender, MouseEventArgs e)
         {
             (sender as Button).BackgroundImage = global::mr.Properties.Resources.scroll_down_button;
+        }
+
+        private void SetDisplayInjectSteps()
+        {
+            mr.model.InjectParameter para = injectProgramCtrl.GetInjectParameterAt(currentStepIndex + 0);
+            rate1Lbl.Text = IntToLabelText(para.FlowRate, 10);
+            volume1Lbl.Text = IntToLabelText(para.Volume, 10);
+            time1Lbl.Text = IntToLabelText(para.Time, 1);
+
+            para = injectProgramCtrl.GetInjectParameterAt(currentStepIndex + 1);
+            rate2Lbl.Text = IntToLabelText(para.FlowRate, 10);
+            volume2Lbl.Text = IntToLabelText(para.Volume, 10);
+            time2Lbl.Text = IntToLabelText(para.Time, 1);
+
+            para = injectProgramCtrl.GetInjectParameterAt(currentStepIndex + 2);
+            rate3Lbl.Text = IntToLabelText(para.FlowRate, 10);
+            volume3Lbl.Text = IntToLabelText(para.Volume, 10);
+            time3Lbl.Text = IntToLabelText(para.Time, 1);
+
+            para = injectProgramCtrl.GetInjectParameterAt(currentStepIndex + 3);
+            rate4Lbl.Text = IntToLabelText(para.FlowRate, 10);
+            volume4Lbl.Text = IntToLabelText(para.Volume, 10);
+            time4Lbl.Text = IntToLabelText(para.Time, 1);
         }
     }
 }

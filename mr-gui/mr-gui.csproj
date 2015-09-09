@@ -87,7 +87,7 @@
     <Compile Include="controller\SyringeInjectController.cs" />
     <Compile Include="controller\TimingController.cs" />
     <Compile Include="model\InjectProgram.cs" />
-    <Compile Include="model\SyringeParameter.cs" />
+    <Compile Include="model\InjectParameter.cs" />
     <Compile Include="model\SyringeStatus.cs" />
     <Compile Include="model\Timing.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
