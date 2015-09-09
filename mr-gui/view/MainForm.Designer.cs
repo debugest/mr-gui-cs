@@ -301,7 +301,7 @@
             this.phase4Lbl.TabIndex = 12;
             this.phase4Lbl.Text = "----";
             this.phase4Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.phase4Lbl.Click += new System.EventHandler(this.phaseLbl_Click);
+            this.phase4Lbl.Click += new System.EventHandler(this.phase4Lbl_Click);
             // 
             // time3Lbl
             // 
@@ -349,7 +349,7 @@
             this.phase3Lbl.TabIndex = 8;
             this.phase3Lbl.Text = "----";
             this.phase3Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.phase3Lbl.Click += new System.EventHandler(this.phaseLbl_Click);
+            this.phase3Lbl.Click += new System.EventHandler(this.phase3Lbl_Click);
             // 
             // time2Lbl
             // 
@@ -397,7 +397,7 @@
             this.phase2Lbl.TabIndex = 4;
             this.phase2Lbl.Text = "----";
             this.phase2Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.phase2Lbl.Click += new System.EventHandler(this.phaseLbl_Click);
+            this.phase2Lbl.Click += new System.EventHandler(this.phase2Lbl_Click);
             // 
             // time1Lbl
             // 
@@ -445,7 +445,7 @@
             this.phase1Lbl.TabIndex = 0;
             this.phase1Lbl.Text = "----";
             this.phase1Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.phase1Lbl.Click += new System.EventHandler(this.phaseLbl_Click);
+            this.phase1Lbl.Click += new System.EventHandler(this.phase1Lbl_Click);
             // 
             // salinePanel
             // 
@@ -782,6 +782,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
+            this.Click += new System.EventHandler(this.phase1Lbl_Click);
             this.parameterSetPanel.ResumeLayout(false);
             this.parameterSetPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scrollBarBox)).EndInit();

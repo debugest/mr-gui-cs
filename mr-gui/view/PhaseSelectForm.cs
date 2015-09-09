@@ -39,6 +39,7 @@ namespace mr.view
 
         private void cancelBtn_Click(object sender, EventArgs e)
         {
+            this.Owner.Tag = null;
             this.Close();
         }
 

@@ -29,6 +29,81 @@ namespace mr.controller
 
         }
 
+        public void Reset(int index)
+        {
+            if (0 <= index && index < 8)
+            {
+                program.RemoveInjectStep(index);
+            }
+        }
+
+        public bool canPausePhase(int index)
+        {
+            if (index == 0)
+            {
+                return false;
+            }
+            else
+            {
+                mr.model.InjectParameter para = GetInjectParameterAt(index - 1);
+                if (null != para && (para.PhaseType == mr.model.InjectParameter.InjectPhaseType.PAUSE
+                    || para.PhaseType == mr.model.InjectParameter.InjectPhaseType.TIMED_PAUSE)) 
+                {
+                    return false;
+                }
+                return true;
+            }
+        }
+
+        public bool canInjectContrast(int index)
+        {
+            if (index == 0)
+            {
+                return true;
+            }
+            else
+            {
+                bool result = true;
+                for (int i = 0; i != index; ++i)
+                {
+                    mr.model.InjectParameter para = GetInjectParameterAt(i);
+                    if (null != para && para.PhaseType == mr.model.InjectParameter.InjectPhaseType.SALINE)
+                    {
+                        result = false;
+                        break;
+                    }
+                }
+                return result;
+            }
+        }
+
+        public bool canInjectSaline(int index)
+        {
+            if (index == 0 || index > 1)
+            {
+                return false;
+            }
+            else
+            {
+                bool result = true;
+                for (int i = 0; i != index; ++i)
+                {
+                    mr.model.InjectParameter para = GetInjectParameterAt(i);
+                    if (null != para)
+                    {
+                        if (para.PhaseType == mr.model.InjectParameter.InjectPhaseType.PAUSE
+                            || para.PhaseType == mr.model.InjectParameter.InjectPhaseType.TIMED_PAUSE
+                            || para.PhaseType == mr.model.InjectParameter.InjectPhaseType.SALINE)
+                        {
+                            result = false;
+                            break;
+                        }
+                    }
+                }
+                return result;
+            }
+        }
+
         public mr.model.InjectParameter GetInjectParameterAt(int index)
         {
             if (index >= 0 && index < 8)

@@ -34,6 +34,7 @@
             this.contrastBtn = new System.Windows.Forms.Button();
             this.cancelBtn = new System.Windows.Forms.Button();
             this.deleteBtn = new System.Windows.Forms.Button();
+            this.infoLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // pauseBtn
@@ -44,7 +45,7 @@
             this.pauseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pauseBtn.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.pauseBtn.ForeColor = System.Drawing.Color.White;
-            this.pauseBtn.Location = new System.Drawing.Point(12, 12);
+            this.pauseBtn.Location = new System.Drawing.Point(12, 81);
             this.pauseBtn.Name = "pauseBtn";
             this.pauseBtn.Size = new System.Drawing.Size(160, 78);
             this.pauseBtn.TabIndex = 0;
@@ -62,7 +63,7 @@
             this.timedPauseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.timedPauseBtn.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.timedPauseBtn.ForeColor = System.Drawing.Color.White;
-            this.timedPauseBtn.Location = new System.Drawing.Point(183, 12);
+            this.timedPauseBtn.Location = new System.Drawing.Point(183, 81);
             this.timedPauseBtn.Name = "timedPauseBtn";
             this.timedPauseBtn.Size = new System.Drawing.Size(160, 78);
             this.timedPauseBtn.TabIndex = 1;
@@ -80,7 +81,7 @@
             this.salineBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.salineBtn.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.salineBtn.ForeColor = System.Drawing.Color.White;
-            this.salineBtn.Location = new System.Drawing.Point(183, 96);
+            this.salineBtn.Location = new System.Drawing.Point(183, 165);
             this.salineBtn.Name = "salineBtn";
             this.salineBtn.Size = new System.Drawing.Size(160, 78);
             this.salineBtn.TabIndex = 3;
@@ -98,7 +99,7 @@
             this.contrastBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.contrastBtn.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.contrastBtn.ForeColor = System.Drawing.Color.White;
-            this.contrastBtn.Location = new System.Drawing.Point(12, 96);
+            this.contrastBtn.Location = new System.Drawing.Point(12, 165);
             this.contrastBtn.Name = "contrastBtn";
             this.contrastBtn.Size = new System.Drawing.Size(160, 78);
             this.contrastBtn.TabIndex = 2;
@@ -116,7 +117,7 @@
             this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancelBtn.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.cancelBtn.ForeColor = System.Drawing.Color.White;
-            this.cancelBtn.Location = new System.Drawing.Point(183, 180);
+            this.cancelBtn.Location = new System.Drawing.Point(183, 249);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(160, 78);
             this.cancelBtn.TabIndex = 5;
@@ -134,7 +135,7 @@
             this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteBtn.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.deleteBtn.ForeColor = System.Drawing.Color.White;
-            this.deleteBtn.Location = new System.Drawing.Point(12, 180);
+            this.deleteBtn.Location = new System.Drawing.Point(12, 249);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(160, 78);
             this.deleteBtn.TabIndex = 4;
@@ -144,13 +145,26 @@
             this.deleteBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.phaseBtn_MouseDown);
             this.deleteBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.phaseBtn_MouseUp);
             // 
+            // infoLbl
+            // 
+            this.infoLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(61)))), ((int)(((byte)(136)))));
+            this.infoLbl.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.infoLbl.ForeColor = System.Drawing.Color.White;
+            this.infoLbl.Location = new System.Drawing.Point(12, 15);
+            this.infoLbl.Name = "infoLbl";
+            this.infoLbl.Size = new System.Drawing.Size(331, 54);
+            this.infoLbl.TabIndex = 45;
+            this.infoLbl.Text = "Select Phase";
+            this.infoLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // PhaseSelectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::mr.Properties.Resources.phase_select_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(355, 269);
+            this.ClientSize = new System.Drawing.Size(355, 336);
+            this.Controls.Add(this.infoLbl);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.deleteBtn);
             this.Controls.Add(this.salineBtn);
@@ -173,5 +187,6 @@
         private System.Windows.Forms.Button contrastBtn;
         private System.Windows.Forms.Button cancelBtn;
         private System.Windows.Forms.Button deleteBtn;
+        private System.Windows.Forms.Label infoLbl;
     }
 }

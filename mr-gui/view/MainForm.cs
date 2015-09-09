@@ -143,11 +143,96 @@ namespace mr.view
             this.Close();
         }
 
-        private void phaseLbl_Click(object sender, EventArgs e)
+        private void phase1Lbl_Click(object sender, EventArgs e)
         {
-            PhaseSelectForm form = new PhaseSelectForm();
+            bool canPause = injectProgramCtrl.canPausePhase(currentStepIndex + 0);
+            bool canContrast = injectProgramCtrl.canInjectContrast(currentStepIndex + 0);
+            bool canSaline = injectProgramCtrl.canInjectSaline(currentStepIndex + 0);
+            PhaseSelectForm form = new PhaseSelectForm(canPause, canPause, canContrast, canSaline);
             form.Owner = this;
             form.ShowDialog();
+            if (Tag != null)
+            {
+                Label label = sender as Label;
+                ChangePhaseType(label, currentStepIndex + 0, Tag.ToString(), rate1Lbl, volume1Lbl, time1Lbl);
+            }
+        }
+
+        private void phase2Lbl_Click(object sender, EventArgs e)
+        {
+            bool canPause = injectProgramCtrl.canPausePhase(currentStepIndex + 1);
+            bool canContrast = injectProgramCtrl.canInjectContrast(currentStepIndex + 1);
+            bool canSaline = injectProgramCtrl.canInjectSaline(currentStepIndex + 1);
+            PhaseSelectForm form = new PhaseSelectForm(canPause, canPause, canContrast, canSaline);
+            form.Owner = this;
+            form.ShowDialog();
+            if (Tag != null)
+            {
+                Label label = sender as Label;
+                ChangePhaseType(label, currentStepIndex + 1, Tag.ToString(), rate2Lbl, volume2Lbl, time2Lbl);
+            }
+        }
+
+        private void phase3Lbl_Click(object sender, EventArgs e)
+        {
+            bool canPause = injectProgramCtrl.canPausePhase(currentStepIndex + 3);
+            bool canContrast = injectProgramCtrl.canInjectContrast(currentStepIndex + 3);
+            bool canSaline = injectProgramCtrl.canInjectSaline(currentStepIndex + 3);
+            PhaseSelectForm form = new PhaseSelectForm(canPause, canPause, canContrast, canSaline);
+            form.Owner = this;
+            form.ShowDialog();
+            if (Tag != null)
+            {
+                Label label = sender as Label;
+                ChangePhaseType(label, currentStepIndex + 2, Tag.ToString(), rate3Lbl, volume3Lbl, time3Lbl);
+            }
+        }
+
+        private void phase4Lbl_Click(object sender, EventArgs e)
+        {
+            bool canPause = injectProgramCtrl.canPausePhase(currentStepIndex + 3);
+            bool canContrast = injectProgramCtrl.canInjectContrast(currentStepIndex + 3);
+            bool canSaline = injectProgramCtrl.canInjectSaline(currentStepIndex + 3);
+            PhaseSelectForm form = new PhaseSelectForm(canPause, canPause, canContrast, canSaline);
+            form.Owner = this;
+            form.ShowDialog();
+            if (Tag != null)
+            {
+                Label label = sender as Label;
+                ChangePhaseType(label, currentStepIndex + 3, Tag.ToString(), rate4Lbl, volume4Lbl, time4Lbl);
+            }
+        }
+
+        private void ChangePhaseType(Label label, int index, string content, Label rLbl, Label vLbl, Label tLbl)
+        {
+            if ("DELETE" == content)
+            {
+                injectProgramCtrl.Reset(index);
+                label.Text = "----";
+                rLbl.Text = "----";
+                vLbl.Text = "----";
+                tLbl.Text = "----";
+            }
+            else if ("CONTRAST" == content)
+            {
+                injectProgramCtrl.OnInjectStepPhaseChange(index, mr.model.InjectParameter.InjectPhaseType.CONTRAST);
+                label.Text = (index + 1).ToString() + "C";
+            }
+            else if ("SALINE" == content)
+            {
+                injectProgramCtrl.OnInjectStepPhaseChange(index, mr.model.InjectParameter.InjectPhaseType.SALINE);
+                label.Text = (index + 1).ToString() + "S";
+            }
+            else if ("PAUSE" == content)
+            {
+                injectProgramCtrl.OnInjectStepPhaseChange(index, mr.model.InjectParameter.InjectPhaseType.PAUSE);
+                label.Text = (index + 1).ToString() + "P";
+            }
+            else if ("TIMEDPAUSE" == content)
+            {
+                injectProgramCtrl.OnInjectStepPhaseChange(index, mr.model.InjectParameter.InjectPhaseType.TIMED_PAUSE);
+                label.Text = (index + 1).ToString() + "TP";
+            }
         }
 
         private void rate1Lbl_Click(object sender, EventArgs e)
