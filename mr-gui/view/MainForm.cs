@@ -237,14 +237,17 @@ namespace mr.view
 
         private void rate1Lbl_Click(object sender, EventArgs e)
         {
-            Label label = sender as Label;
-            NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
-            form.Owner = this;
-            form.ShowDialog();
-            if (this.Tag != null)
+            if ("----" != phase1Lbl.Text && !(phase1Lbl.Text.EndsWith("P")))
             {
-                label.Text = this.Tag.ToString();
-                AutoCaculate(currentStepIndex, label, volume1Lbl, time1Lbl, "rate");
+                Label label = sender as Label;
+                NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
+                form.Owner = this;
+                form.ShowDialog();
+                if (this.Tag != null)
+                {
+                    label.Text = this.Tag.ToString();
+                    AutoCaculate(currentStepIndex, label, volume1Lbl, time1Lbl, "rate");
+                }
             }
         }
 
@@ -289,14 +292,17 @@ namespace mr.view
 
         private void rate2Lbl_Click(object sender, EventArgs e)
         {
-            Label label = sender as Label;
-            NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
-            form.Owner = this;
-            form.ShowDialog();
-            if (this.Tag != null)
+            if ("----" != phase2Lbl.Text && !(phase2Lbl.Text.EndsWith("P")))
             {
-                label.Text = this.Tag.ToString();
-                AutoCaculate(currentStepIndex + 1, label, volume2Lbl, time2Lbl, "rate");
+                Label label = sender as Label;
+                NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
+                form.Owner = this;
+                form.ShowDialog();
+                if (this.Tag != null)
+                {
+                    label.Text = this.Tag.ToString();
+                    AutoCaculate(currentStepIndex + 1, label, volume2Lbl, time2Lbl, "rate");
+                }
             }
         }
 
@@ -341,14 +347,17 @@ namespace mr.view
 
         private void rate3Lbl_Click(object sender, EventArgs e)
         {
-            Label label = sender as Label;
-            NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
-            form.Owner = this;
-            form.ShowDialog();
-            if (this.Tag != null)
+            if ("----" != phase3Lbl.Text && !(phase3Lbl.Text.EndsWith("P")))
             {
-                label.Text = this.Tag.ToString();
-                AutoCaculate(currentStepIndex + 2, label, volume3Lbl, time3Lbl, "rate");
+                Label label = sender as Label;
+                NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
+                form.Owner = this;
+                form.ShowDialog();
+                if (this.Tag != null)
+                {
+                    label.Text = this.Tag.ToString();
+                    AutoCaculate(currentStepIndex + 2, label, volume3Lbl, time3Lbl, "rate");
+                }
             }
         }
 
@@ -393,14 +402,17 @@ namespace mr.view
 
         private void rate4Lbl_Click(object sender, EventArgs e)
         {
-            Label label = sender as Label;
-            NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
-            form.Owner = this;
-            form.ShowDialog();
-            if (this.Tag != null)
+            if ("----" != phase4Lbl.Text && !(phase4Lbl.Text.EndsWith("P")))
             {
-                label.Text = this.Tag.ToString();
-                AutoCaculate(currentStepIndex + 3, label, volume4Lbl, time4Lbl, "rate");
+                Label label = sender as Label;
+                NumberInputForm form = new NumberInputForm("Flow Rate Range 0.1-10.0ml/sec", label.Text, 100, 1, 10);
+                form.Owner = this;
+                form.ShowDialog();
+                if (this.Tag != null)
+                {
+                    label.Text = this.Tag.ToString();
+                    AutoCaculate(currentStepIndex + 3, label, volume4Lbl, time4Lbl, "rate");
+                }
             }
         }
 
