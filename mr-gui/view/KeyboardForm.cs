@@ -29,7 +29,7 @@ namespace mr.view
 
         private void backspace_button_Click(object sender, EventArgs e)
         {
-            string text = this.inputContent.Text;
+            String text = this.inputContent.Text;
             if (text.Length != 0)
             {
                 this.inputContent.Text = text.Remove(text.Length - 1);

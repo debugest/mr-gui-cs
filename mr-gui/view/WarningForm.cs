@@ -12,7 +12,7 @@ namespace mr.view
 {
     public partial class WarningForm : Form
     {
-        public WarningForm(string info)
+        public WarningForm(String info)
         {
             InitializeComponent();
             this.infoLbl.Text = info;

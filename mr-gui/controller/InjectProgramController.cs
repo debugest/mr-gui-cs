@@ -24,6 +24,11 @@ namespace mr.controller
             program.GetInjectParameter(index).Set(r, v, t);
         }
 
+        public void OnSelectTimedPause(int index, int pauseTime)
+        {
+            program.GetInjectParameter(index).PauseTime = pauseTime;
+        }
+
         public void OnLoadProgram()
         {
 

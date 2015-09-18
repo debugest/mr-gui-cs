@@ -32,6 +32,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.parameterSetPanel = new System.Windows.Forms.Panel();
+            this.pressLimitUnitLbl = new System.Windows.Forms.Label();
+            this.delayToScan2Lbl = new System.Windows.Forms.Label();
+            this.delayToScan2Title = new System.Windows.Forms.Label();
+            this.delayToScan1Lbl = new System.Windows.Forms.Label();
+            this.delayToScan1Title = new System.Windows.Forms.Label();
+            this.pressLimitLbl = new System.Windows.Forms.Label();
+            this.pressureLimitTitle = new System.Windows.Forms.Label();
+            this.anatomicalTitle = new System.Windows.Forms.Label();
+            this.anatomicalLbl = new System.Windows.Forms.Label();
             this.scrollBarBox = new System.Windows.Forms.PictureBox();
             this.injectStepDownBtn = new System.Windows.Forms.Button();
             this.injectStepUpBtn = new System.Windows.Forms.Button();
@@ -82,6 +91,8 @@
             this.contrastDivideLine1 = new System.Windows.Forms.Panel();
             this.contrastRemainNumberLbl = new System.Windows.Forms.Label();
             this.constrastRemainTitleLbl = new System.Windows.Forms.Label();
+            this.currentDateLbl = new System.Windows.Forms.Label();
+            this.currentTimeLbl = new System.Windows.Forms.Label();
             this.parameterSetPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.scrollBarBox)).BeginInit();
             this.panel1.SuspendLayout();
@@ -124,6 +135,15 @@
             // 
             this.parameterSetPanel.BackgroundImage = global::mr.Properties.Resources.parameter_set_background;
             this.parameterSetPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.parameterSetPanel.Controls.Add(this.pressLimitUnitLbl);
+            this.parameterSetPanel.Controls.Add(this.delayToScan2Lbl);
+            this.parameterSetPanel.Controls.Add(this.delayToScan2Title);
+            this.parameterSetPanel.Controls.Add(this.delayToScan1Lbl);
+            this.parameterSetPanel.Controls.Add(this.delayToScan1Title);
+            this.parameterSetPanel.Controls.Add(this.pressLimitLbl);
+            this.parameterSetPanel.Controls.Add(this.pressureLimitTitle);
+            this.parameterSetPanel.Controls.Add(this.anatomicalTitle);
+            this.parameterSetPanel.Controls.Add(this.anatomicalLbl);
             this.parameterSetPanel.Controls.Add(this.scrollBarBox);
             this.parameterSetPanel.Controls.Add(this.injectStepDownBtn);
             this.parameterSetPanel.Controls.Add(this.injectStepUpBtn);
@@ -136,6 +156,118 @@
             this.parameterSetPanel.Name = "parameterSetPanel";
             this.parameterSetPanel.Size = new System.Drawing.Size(580, 332);
             this.parameterSetPanel.TabIndex = 16;
+            // 
+            // pressLimitUnitLbl
+            // 
+            this.pressLimitUnitLbl.AutoSize = true;
+            this.pressLimitUnitLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(61)))), ((int)(((byte)(140)))));
+            this.pressLimitUnitLbl.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pressLimitUnitLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.pressLimitUnitLbl.Location = new System.Drawing.Point(515, 100);
+            this.pressLimitUnitLbl.Name = "pressLimitUnitLbl";
+            this.pressLimitUnitLbl.Size = new System.Drawing.Size(45, 19);
+            this.pressLimitUnitLbl.TabIndex = 24;
+            this.pressLimitUnitLbl.Text = "(Kpa)";
+            this.pressLimitUnitLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // delayToScan2Lbl
+            // 
+            this.delayToScan2Lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.delayToScan2Lbl.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.delayToScan2Lbl.Location = new System.Drawing.Point(473, 275);
+            this.delayToScan2Lbl.Name = "delayToScan2Lbl";
+            this.delayToScan2Lbl.Size = new System.Drawing.Size(75, 40);
+            this.delayToScan2Lbl.TabIndex = 23;
+            this.delayToScan2Lbl.Text = "----";
+            this.delayToScan2Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.delayToScan2Lbl.Click += new System.EventHandler(this.delayToScan2Lbl_Click);
+            // 
+            // delayToScan2Title
+            // 
+            this.delayToScan2Title.AutoSize = true;
+            this.delayToScan2Title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(61)))), ((int)(((byte)(140)))));
+            this.delayToScan2Title.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.delayToScan2Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.delayToScan2Title.Location = new System.Drawing.Point(470, 237);
+            this.delayToScan2Title.Name = "delayToScan2Title";
+            this.delayToScan2Title.Size = new System.Drawing.Size(87, 38);
+            this.delayToScan2Title.TabIndex = 22;
+            this.delayToScan2Title.Text = "Deley to\nScan 1 (sec)";
+            this.delayToScan2Title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // delayToScan1Lbl
+            // 
+            this.delayToScan1Lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.delayToScan1Lbl.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.delayToScan1Lbl.Location = new System.Drawing.Point(473, 197);
+            this.delayToScan1Lbl.Name = "delayToScan1Lbl";
+            this.delayToScan1Lbl.Size = new System.Drawing.Size(75, 40);
+            this.delayToScan1Lbl.TabIndex = 21;
+            this.delayToScan1Lbl.Text = "----";
+            this.delayToScan1Lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.delayToScan1Lbl.Click += new System.EventHandler(this.delayToScan1Lbl_Click);
+            // 
+            // delayToScan1Title
+            // 
+            this.delayToScan1Title.AutoSize = true;
+            this.delayToScan1Title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(61)))), ((int)(((byte)(140)))));
+            this.delayToScan1Title.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.delayToScan1Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.delayToScan1Title.Location = new System.Drawing.Point(470, 159);
+            this.delayToScan1Title.Name = "delayToScan1Title";
+            this.delayToScan1Title.Size = new System.Drawing.Size(87, 38);
+            this.delayToScan1Title.TabIndex = 20;
+            this.delayToScan1Title.Text = "Deley to\nScan 1 (sec)";
+            this.delayToScan1Title.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pressLimitLbl
+            // 
+            this.pressLimitLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.pressLimitLbl.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pressLimitLbl.Location = new System.Drawing.Point(473, 119);
+            this.pressLimitLbl.Name = "pressLimitLbl";
+            this.pressLimitLbl.Size = new System.Drawing.Size(75, 40);
+            this.pressLimitLbl.TabIndex = 19;
+            this.pressLimitLbl.Text = "2068";
+            this.pressLimitLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pressLimitLbl.Click += new System.EventHandler(this.pressLimitLbl_Click);
+            // 
+            // pressureLimitTitle
+            // 
+            this.pressureLimitTitle.AutoSize = true;
+            this.pressureLimitTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(61)))), ((int)(((byte)(140)))));
+            this.pressureLimitTitle.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pressureLimitTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.pressureLimitTitle.Location = new System.Drawing.Point(470, 81);
+            this.pressureLimitTitle.Name = "pressureLimitTitle";
+            this.pressureLimitTitle.Size = new System.Drawing.Size(66, 38);
+            this.pressureLimitTitle.TabIndex = 18;
+            this.pressureLimitTitle.Text = "Pressure\nLimit";
+            this.pressureLimitTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // anatomicalTitle
+            // 
+            this.anatomicalTitle.AutoSize = true;
+            this.anatomicalTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(61)))), ((int)(((byte)(140)))));
+            this.anatomicalTitle.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.anatomicalTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(111)))), ((int)(((byte)(185)))), ((int)(((byte)(255)))));
+            this.anatomicalTitle.Location = new System.Drawing.Point(470, 3);
+            this.anatomicalTitle.Name = "anatomicalTitle";
+            this.anatomicalTitle.Size = new System.Drawing.Size(85, 38);
+            this.anatomicalTitle.TabIndex = 17;
+            this.anatomicalTitle.Text = "Anatomical\nIdentifier";
+            this.anatomicalTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // anatomicalLbl
+            // 
+            this.anatomicalLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(173)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.anatomicalLbl.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.anatomicalLbl.Location = new System.Drawing.Point(473, 41);
+            this.anatomicalLbl.Name = "anatomicalLbl";
+            this.anatomicalLbl.Size = new System.Drawing.Size(75, 40);
+            this.anatomicalLbl.TabIndex = 16;
+            this.anatomicalLbl.Text = "----";
+            this.anatomicalLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // scrollBarBox
             // 
@@ -766,12 +898,34 @@
             this.constrastRemainTitleLbl.TabIndex = 0;
             this.constrastRemainTitleLbl.Text = "Volume\nRemaining";
             // 
+            // currentDateLbl
+            // 
+            this.currentDateLbl.AutoSize = true;
+            this.currentDateLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.currentDateLbl.ForeColor = System.Drawing.Color.White;
+            this.currentDateLbl.Location = new System.Drawing.Point(861, 120);
+            this.currentDateLbl.Name = "currentDateLbl";
+            this.currentDateLbl.Size = new System.Drawing.Size(0, 17);
+            this.currentDateLbl.TabIndex = 17;
+            // 
+            // currentTimeLbl
+            // 
+            this.currentTimeLbl.AutoSize = true;
+            this.currentTimeLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.currentTimeLbl.ForeColor = System.Drawing.Color.White;
+            this.currentTimeLbl.Location = new System.Drawing.Point(861, 140);
+            this.currentTimeLbl.Name = "currentTimeLbl";
+            this.currentTimeLbl.Size = new System.Drawing.Size(0, 17);
+            this.currentTimeLbl.TabIndex = 18;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(91)))), ((int)(((byte)(166)))));
             this.ClientSize = new System.Drawing.Size(1024, 709);
+            this.Controls.Add(this.currentTimeLbl);
+            this.Controls.Add(this.currentDateLbl);
             this.Controls.Add(this.parameterSetPanel);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -794,6 +948,7 @@
             this.contrastPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contrastImageBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -853,6 +1008,17 @@
         private System.Windows.Forms.Button injectStepDownBtn;
         private System.Windows.Forms.Button injectStepUpBtn;
         private System.Windows.Forms.PictureBox scrollBarBox;
+        private System.Windows.Forms.Label anatomicalTitle;
+        private System.Windows.Forms.Label anatomicalLbl;
+        private System.Windows.Forms.Label pressureLimitTitle;
+        private System.Windows.Forms.Label pressLimitLbl;
+        private System.Windows.Forms.Label delayToScan1Title;
+        private System.Windows.Forms.Label delayToScan1Lbl;
+        private System.Windows.Forms.Label delayToScan2Lbl;
+        private System.Windows.Forms.Label delayToScan2Title;
+        private System.Windows.Forms.Label pressLimitUnitLbl;
+        private System.Windows.Forms.Label currentDateLbl;
+        private System.Windows.Forms.Label currentTimeLbl;
 
     }
 }

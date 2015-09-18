@@ -19,55 +19,69 @@ namespace mr.view
             isContrastTiming = true;
             isKvoOff = true;
             injectProgramCtrl = new mr.controller.InjectProgramController(this);
+            dateCtrl = new mr.controller.DateController(this);
         }
 
-        public delegate void TimingInvoke(string text);
-        public delegate void ContrastInjectInvoke(int remain, int injected, string imageName);
-        public delegate void SalineInjectInvoke(int remain, int injected, string imageName);
+        public delegate void TimingInvoke(String text);
+        public delegate void ContrastInjectInvoke(int remain, int injected, String imageName);
+        public delegate void SalineInjectInvoke(int remain, int injected, String imageName);
+        public delegate void UpdateTimeInvoke(String date, String time);
 
         public void BeginContrastTiming(int sec)
         {
             //
         }
 
-        public void UpdateTimingText(string text)
+        public void UpdateTimingText(String text)
         {
             TimingInvoke invoke = new TimingInvoke(InternalUpdateTimingText);
             this.BeginInvoke(invoke, text);
         }
 
-        public void InjectContrast(int remain, int injected, string imageName)
+        public void UpdateCurrentTime(String date, String time)
+        {
+            UpdateTimeInvoke invoke = new UpdateTimeInvoke(InternalUpdateCurrentTime);
+            this.BeginInvoke(invoke, date, time);
+        }
+
+        public void InjectContrast(int remain, int injected, String imageName)
         {
             ContrastInjectInvoke invoke = new ContrastInjectInvoke(InternalContrastInject);
             this.BeginInvoke(invoke, imageName);
         }
 
-        public void InjectSaline(int remain, int injected, string imageName)
+        public void InjectSaline(int remain, int injected, String imageName)
         {
             SalineInjectInvoke invoke = new SalineInjectInvoke(InternalSalineInject);
             this.BeginInvoke(invoke, imageName);
         }
 
-        private void InternalUpdateTimingText(string text)
+        private void InternalUpdateTimingText(String text)
         {
             this.timingLabel.Text = text;
         }
 
-        private void InternalContrastInject(int remain, int injected, string imageName)
+        private void InternalContrastInject(int remain, int injected, String imageName)
         {
             this.contrastRemainNumberLbl.Text = remain.ToString();
             this.contrastInjectedNumberLbl.Text = injected.ToString();
             this.LoadImage(this.contrastImageBox, imageName);
         }
 
-        private void InternalSalineInject(int remain, int injected, string imageName)
+        private void InternalSalineInject(int remain, int injected, String imageName)
         {
             this.salineRemainNumberLbl.Text = remain.ToString();
             this.salineInjectedNumberLbl.Text = injected.ToString();
             this.LoadImage(this.salineImageBox, imageName);
         }
 
-        private void LoadImage(PictureBox box, string imageName)
+        private void InternalUpdateCurrentTime(String date, String time)
+        {
+            this.currentDateLbl.Text = date;
+            this.currentTimeLbl.Text = time;
+        }
+
+        private void LoadImage(PictureBox box, String imageName)
         {
             box.Image = (Bitmap)global::mr.Properties.Resources.ResourceManager.GetObject(imageName);
         }
@@ -133,6 +147,7 @@ namespace mr.view
         private mr.controller.TimingController contrastTimingCtrl;
         private mr.controller.SyringeInjectController contrastInjectCtrl;
         private mr.controller.SyringeInjectController salineInjectCtrl;
+        private mr.controller.DateController dateCtrl;
         private bool isContrastTiming;
         private bool isKvoOff;
         private int currentStepIndex;
@@ -154,7 +169,7 @@ namespace mr.view
             if (Tag != null)
             {
                 Label label = sender as Label;
-                ChangePhaseType(label, currentStepIndex + 0, Tag.ToString(), rate1Lbl, volume1Lbl, time1Lbl);
+                ChangePhaseType(label, currentStepIndex + 0, rate1Lbl, volume1Lbl, time1Lbl);
             }
         }
 
@@ -169,7 +184,7 @@ namespace mr.view
             if (Tag != null)
             {
                 Label label = sender as Label;
-                ChangePhaseType(label, currentStepIndex + 1, Tag.ToString(), rate2Lbl, volume2Lbl, time2Lbl);
+                ChangePhaseType(label, currentStepIndex + 1, rate2Lbl, volume2Lbl, time2Lbl);
             }
         }
 
@@ -184,7 +199,7 @@ namespace mr.view
             if (Tag != null)
             {
                 Label label = sender as Label;
-                ChangePhaseType(label, currentStepIndex + 2, Tag.ToString(), rate3Lbl, volume3Lbl, time3Lbl);
+                ChangePhaseType(label, currentStepIndex + 2, rate3Lbl, volume3Lbl, time3Lbl);
             }
         }
 
@@ -199,12 +214,24 @@ namespace mr.view
             if (Tag != null)
             {
                 Label label = sender as Label;
-                ChangePhaseType(label, currentStepIndex + 3, Tag.ToString(), rate4Lbl, volume4Lbl, time4Lbl);
+                ChangePhaseType(label, currentStepIndex + 3, rate4Lbl, volume4Lbl, time4Lbl);
             }
         }
 
-        private void ChangePhaseType(Label label, int index, string content, Label rLbl, Label vLbl, Label tLbl)
+        private void ChangePhaseType(Label label, int index, Label rLbl, Label vLbl, Label tLbl)
         {
+            String content;
+            int pauseTime = 0;
+            if (this.Tag is Array)
+            {
+                Object[] arr = (Object[])Tag;
+                content = (String)(arr[0]);
+                pauseTime = Convert.ToInt32((String)arr[1]);
+            }
+            else
+            {
+                content = (String)Tag;
+            }
             if ("DELETE" == content)
             {
                 injectProgramCtrl.Reset(index);
@@ -231,6 +258,7 @@ namespace mr.view
             else if ("TIMEDPAUSE" == content)
             {
                 injectProgramCtrl.OnInjectStepPhaseChange(index, mr.model.InjectParameter.InjectPhaseType.TIMED_PAUSE);
+                injectProgramCtrl.OnSelectTimedPause(index, pauseTime);
                 label.Text = (index + 1).ToString() + "TP";
             }
         }
@@ -455,7 +483,7 @@ namespace mr.view
             }
         }
 
-        private void AutoCaculate(int stepIndex, Label rateLbl, Label volumeLbl, Label timeLbl, string title)
+        private void AutoCaculate(int stepIndex, Label rateLbl, Label volumeLbl, Label timeLbl, String title)
         {
             int rate = LabelTextToInt(rateLbl.Text, 10);
             int time = LabelTextToInt(timeLbl.Text, 1);
@@ -469,7 +497,7 @@ namespace mr.view
             }
             else if ("volume" == title)
             {
-                if (0 != rate && 0 != time)
+                if (0 != rate && 0 != volume)
                 {
                     timeLbl.Text = IntToLabelText(volume / rate, 1);
                 }
@@ -485,7 +513,7 @@ namespace mr.view
                 LabelTextToInt(volumeLbl.Text, 10), LabelTextToInt(timeLbl.Text, 1));
         }
 
-        public int LabelTextToInt(string text, int factor)
+        public static int LabelTextToInt(String text, int factor)
         {
             if ("----" == text || "" == text)
             {
@@ -498,7 +526,7 @@ namespace mr.view
             }
         }
 
-        public string IntToLabelText(int value, int factor)
+        public static String IntToLabelText(int value, int factor)
         {
             int intPart = value / factor;
             int decPart = value % factor;
@@ -560,24 +588,95 @@ namespace mr.view
         private void SetDisplayInjectSteps()
         {
             mr.model.InjectParameter para = injectProgramCtrl.GetInjectParameterAt(currentStepIndex + 0);
+            phase1Lbl.Text = PhaseTypeToString(para.PhaseType, currentStepIndex + 0);
             rate1Lbl.Text = IntToLabelText(para.FlowRate, 10);
             volume1Lbl.Text = IntToLabelText(para.Volume, 10);
             time1Lbl.Text = IntToLabelText(para.Time, 1);
 
             para = injectProgramCtrl.GetInjectParameterAt(currentStepIndex + 1);
+            phase2Lbl.Text = PhaseTypeToString(para.PhaseType, currentStepIndex + 1);
             rate2Lbl.Text = IntToLabelText(para.FlowRate, 10);
             volume2Lbl.Text = IntToLabelText(para.Volume, 10);
             time2Lbl.Text = IntToLabelText(para.Time, 1);
 
             para = injectProgramCtrl.GetInjectParameterAt(currentStepIndex + 2);
+            phase3Lbl.Text = PhaseTypeToString(para.PhaseType, currentStepIndex + 2);
             rate3Lbl.Text = IntToLabelText(para.FlowRate, 10);
             volume3Lbl.Text = IntToLabelText(para.Volume, 10);
             time3Lbl.Text = IntToLabelText(para.Time, 1);
 
             para = injectProgramCtrl.GetInjectParameterAt(currentStepIndex + 3);
+            phase4Lbl.Text = PhaseTypeToString(para.PhaseType, currentStepIndex + 3);
             rate4Lbl.Text = IntToLabelText(para.FlowRate, 10);
             volume4Lbl.Text = IntToLabelText(para.Volume, 10);
             time4Lbl.Text = IntToLabelText(para.Time, 1);
         }
+
+        private String PhaseTypeToString(mr.model.InjectParameter.InjectPhaseType phase, int index)
+        {
+            String result = (index + 1).ToString();
+            if (mr.model.InjectParameter.InjectPhaseType.CONTRAST == phase)
+            {
+                result += "C";
+            }
+            else if (mr.model.InjectParameter.InjectPhaseType.SALINE == phase)
+            {
+                result += "S";
+            }
+            else if (mr.model.InjectParameter.InjectPhaseType.PAUSE == phase)
+            {
+                result += "P";
+            }
+            else if (mr.model.InjectParameter.InjectPhaseType.TIMED_PAUSE == phase)
+            {
+                result += "TP";
+            }
+            else
+            {
+                result = "----";
+            }
+            return result;
+        }
+
+        private void pressLimitLbl_Click(object sender, EventArgs e)
+        {
+            PressureInputForm form = new PressureInputForm("2068", "Kpa");
+            form.Owner = this;
+            form.ShowDialog();
+            if (Tag != null)
+            {
+                this.pressLimitLbl.Text = ((String[])Tag)[0];
+                this.pressLimitUnitLbl.Text = String.Format("({0})", ((String[])Tag)[1]);
+            }
+        }
+
+        private void delayToScan1Lbl_Click(object sender, EventArgs e)
+        {
+            ShowDelayToScanInput(delayToScan1Lbl, 300, 1);
+            if (null != this.Tag)
+            {
+                this.delayToScan1Lbl.Text = (String)(this.Tag);
+            }
+        }
+
+        private void delayToScan2Lbl_Click(object sender, EventArgs e)
+        {
+            if ("----" != this.delayToScan1Lbl.Text)
+            {
+                ShowDelayToScanInput(delayToScan2Lbl, 900, 1);
+                if (null != this.Tag)
+                {
+                    this.delayToScan2Lbl.Text = (String)(this.Tag);
+                }
+            }
+        }
+
+        private void ShowDelayToScanInput(Label label, int max, int min)
+        {
+            DelayInputForm form = new DelayInputForm(String.Format("Delay to Scan Range {0}-{1}sec", min, max), label.Text, max, min);
+            form.Owner = this;
+            form.ShowDialog();
+        }
+
     }
 }

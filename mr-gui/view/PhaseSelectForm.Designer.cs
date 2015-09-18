@@ -69,7 +69,7 @@
             this.timedPauseBtn.TabIndex = 1;
             this.timedPauseBtn.Text = "TIMED\nPAUSE";
             this.timedPauseBtn.UseVisualStyleBackColor = true;
-            this.timedPauseBtn.Click += new System.EventHandler(this.phaseBtn_Click);
+            this.timedPauseBtn.Click += new System.EventHandler(this.timedPauseBtn_Click);
             this.timedPauseBtn.MouseDown += new System.Windows.Forms.MouseEventHandler(this.phaseBtn_MouseDown);
             this.timedPauseBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.phaseBtn_MouseUp);
             // 

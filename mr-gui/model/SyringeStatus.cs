@@ -32,7 +32,7 @@ namespace mr.model
             injected = 0;
         }
 
-        public string ToImageName()
+        public String ToImageName()
         {
             if (SyringeDirection.NO == direction)
             {
@@ -40,7 +40,7 @@ namespace mr.model
             }
             else
             {
-                string result = "syr" + direction.ToString().ToLower() + injected / 2 * 2 + ".jpg";
+                String result = "syr" + direction.ToString().ToLower() + injected / 2 * 2 + ".jpg";
                 return result;
             }
         }

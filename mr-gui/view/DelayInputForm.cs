@@ -10,19 +10,18 @@ using System.Windows.Forms;
 
 namespace mr.view
 {
-    public partial class NumberInputForm : Form
+    public partial class DelayInputForm : Form
     {
-        public NumberInputForm(String infoTxt, String origin, int max, int min, int factor)
+        public DelayInputForm(String infoTxt, String origin, int max, int min)
         {
             InitializeComponent();
             this.infoLbl.Text = infoTxt;
+            this.max = max;
+            this.min = min;
             if ("----" != origin)
             {
                 inputContent.Text = origin;
             }
-            this.max = max;
-            this.min = min;
-            this.factor = factor;
         }
 
         private void key_button_Click(object sender, EventArgs e)
@@ -50,12 +49,18 @@ namespace mr.view
             this.Close();
         }
 
+        private void resetBtn_Click(object sender, EventArgs e)
+        {
+            this.Owner.Tag = "----";
+            this.Close();
+        }
+
         private void enterBtn_Click(object sender, EventArgs e)
         {
-            int iResult = MainForm.LabelTextToInt(inputContent.Text, factor);
-            if (iResult >= min && iResult <= max)
+            int result = int.Parse(inputContent.Text);
+            if (result >= min && result <= max)
             {
-                this.Owner.Tag = MainForm.IntToLabelText(iResult, factor);
+                this.Owner.Tag = inputContent.Text;
                 this.Close();
             }
             else
@@ -87,6 +92,5 @@ namespace mr.view
 
         private int max;
         private int min;
-        private int factor;
     }
 }

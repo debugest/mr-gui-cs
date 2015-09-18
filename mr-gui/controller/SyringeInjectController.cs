@@ -8,7 +8,7 @@ namespace mr.controller
 {
     class SyringeInjectController
     {
-        public SyringeInjectController(mr.view.MainForm form, string type)
+        public SyringeInjectController(mr.view.MainForm form, String type)
         {
             total = 0;
             mainForm = form;
@@ -51,7 +51,7 @@ namespace mr.controller
 
         private void InternalChange()
         {
-            string imageName = GetImageUrl();
+            String imageName = GetImageUrl();
             if (null != imageName)
             {
                 if ("contrast" == syringeType)
@@ -65,14 +65,14 @@ namespace mr.controller
             }
         }
 
-        private string GetImageUrl()
+        private String GetImageUrl()
         {
-            string result = status.ToImageName();
+            String result = status.ToImageName();
             return result;
         }
 
         private int total;
-        private string syringeType;
+        private String syringeType;
         private mr.view.MainForm mainForm;
         private mr.model.SyringeInjectStatus status;
     }

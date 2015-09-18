@@ -83,6 +83,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\DateController.cs" />
     <Compile Include="controller\InjectProgramController.cs" />
     <Compile Include="controller\SyringeInjectController.cs" />
     <Compile Include="controller\TimingController.cs" />
@@ -96,6 +97,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="run\Program.cs" />
+    <Compile Include="view\DelayInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\DelayInputForm.Designer.cs">
+      <DependentUpon>DelayInputForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\KeyboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +127,12 @@
     <Compile Include="view\PhaseSelectForm.Designer.cs">
       <DependentUpon>PhaseSelectForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="view\PressureInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\PressureInputForm.Designer.cs">
+      <DependentUpon>PressureInputForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\WarningForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +152,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\DelayInputForm.resx">
+      <DependentUpon>DelayInputForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\KeyboardForm.resx">
       <DependentUpon>KeyboardForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="view\PhaseSelectForm.resx">
       <DependentUpon>PhaseSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PressureInputForm.resx">
+      <DependentUpon>PressureInputForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\WarningForm.resx">
       <DependentUpon>WarningForm.cs</DependentUpon>

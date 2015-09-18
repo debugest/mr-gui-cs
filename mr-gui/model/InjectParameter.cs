@@ -18,15 +18,16 @@ namespace mr.model
         }
 
         public InjectParameter()
-            : this(InjectPhaseType.NONE, 0, 0, 0)
+            : this(InjectPhaseType.NONE, 0, 0, 0, 0)
         { }
 
-        public InjectParameter(InjectPhaseType p, int r, int v, int t)
+        public InjectParameter(InjectPhaseType p, int r, int v, int t, int pt)
         {
             phaseType = p;
             flowRate = r;
             volume = v;
             time = t;
+            pauseTime = pt;
         }
 
         public void Reset()
@@ -35,6 +36,7 @@ namespace mr.model
             flowRate = 0;
             volume = 0;
             time = 0;
+            pauseTime = 0;
         }
 
         public void Copy(InjectParameter para)
@@ -43,6 +45,7 @@ namespace mr.model
             this.flowRate = para.flowRate;
             this.volume = para.volume;
             this.time = para.time;
+            this.pauseTime = para.pauseTime;
         }
 
         public void Set(int r, int v, int t)
@@ -61,6 +64,28 @@ namespace mr.model
             set
             {
                 phaseType = value;
+            }
+        }
+
+        public int PauseTime
+        {
+            get
+            {
+                if (phaseType == InjectPhaseType.TIMED_PAUSE)
+                {
+                    return pauseTime;
+                }
+                else
+                {
+                    return 0;
+                }
+            }
+            set
+            {
+                if (phaseType == InjectPhaseType.TIMED_PAUSE)
+                {
+                    pauseTime = value;
+                }
             }
         }
 
@@ -104,5 +129,6 @@ namespace mr.model
         private int flowRate;
         private int volume;
         private int time;
+        private int pauseTime;
     }
 }

@@ -33,7 +33,7 @@ namespace mr.model
         {
             --second;
         }
-        public override string ToString()
+        public override String ToString()
         {
             int min = second / 60;
             int sec = second % 60;

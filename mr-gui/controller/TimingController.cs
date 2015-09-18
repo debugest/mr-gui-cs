@@ -44,7 +44,7 @@ namespace mr.controller
             mainForm.UpdateTimingText(GetTimingString());
         }
 
-        public string GetTimingString()
+        public String GetTimingString()
         {
             return timingModel.ToString();
         }

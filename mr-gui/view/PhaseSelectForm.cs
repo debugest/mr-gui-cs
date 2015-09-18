@@ -31,9 +31,26 @@ namespace mr.view
             Button btn = (sender as Button);
             if (btn != null)
             {
-                string result = btn.Text.Replace("\n", "");
+                String result = btn.Text.Replace("\n", "");
                 this.Owner.Tag = result;
                 this.Close();
+            }
+        }
+
+        private void timedPauseBtn_Click(object sender, EventArgs e)
+        {
+            Button btn = (sender as Button);
+            if (btn != null)
+            {
+                String result = btn.Text.Replace("\n", "");
+                NumberInputForm form = new NumberInputForm("Timed Pause Range 1-900 sec", "", 900, 1, 1);
+                form.Owner = this;
+                form.ShowDialog();
+                if (this.Tag != null)
+                {
+                    this.Owner.Tag = new Object[] { result, Tag };
+                    this.Close();
+                }
             }
         }
 
